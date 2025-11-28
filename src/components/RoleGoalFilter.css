@@ -1,0 +1,107 @@
+.role-goal-filter {
+  margin: 2rem 0;
+}
+
+.filter-card {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.filter-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--nyl-blue);
+}
+
+.filter-description {
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+}
+
+.filters {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.filter-group label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  color: var(--nyl-blue);
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.label-icon {
+  font-size: 1.2rem;
+}
+
+.filter-select {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 2px solid var(--border);
+  border-radius: 8px;
+  background-color: white;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.filter-select:hover {
+  border-color: var(--nyl-blue-light);
+}
+
+.filter-select:focus {
+  border-color: var(--nyl-blue);
+  box-shadow: 0 0 0 3px rgba(0, 115, 189, 0.1);
+}
+
+.selection-summary {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background: linear-gradient(135deg, rgba(0, 115, 189, 0.05) 0%, rgba(0, 163, 224, 0.05) 100%);
+  border-left: 4px solid var(--nyl-accent);
+  border-radius: 4px;
+  animation: slideIn 0.3s ease;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.selection-summary p {
+  margin: 0;
+  color: var(--nyl-blue);
+}
+
+.selection-summary strong {
+  color: var(--nyl-blue);
+}
+
+@media (max-width: 768px) {
+  .filter-card {
+    padding: 1.5rem;
+  }
+
+  .filters {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}

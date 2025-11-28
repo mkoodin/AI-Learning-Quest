@@ -1,0 +1,149 @@
+.progress-tracker {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  margin: 3rem 0 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.progress-tracker h3 {
+  color: var(--nyl-blue);
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.progress-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.stat-card {
+  background: var(--bg-secondary);
+  border-radius: 8px;
+  padding: 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  transition: transform 0.2s;
+}
+
+.stat-card:hover {
+  transform: translateY(-2px);
+}
+
+.stat-icon {
+  font-size: 2rem;
+}
+
+.stat-content {
+  flex: 1;
+}
+
+.stat-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--nyl-blue);
+  line-height: 1;
+  margin-bottom: 0.25rem;
+}
+
+.stat-label {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  line-height: 1.3;
+}
+
+.progress-bar-container {
+  margin: 2rem 0;
+}
+
+.progress-bar-label {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: var(--nyl-blue);
+}
+
+.progress-bar {
+  width: 100%;
+  height: 12px;
+  background: var(--bg-secondary);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--nyl-blue) 0%, var(--nyl-accent) 100%);
+  transition: width 0.5s ease;
+  border-radius: 6px;
+}
+
+.completion-message {
+  background: linear-gradient(135deg, rgba(0, 115, 189, 0.05) 0%, rgba(0, 163, 224, 0.05) 100%);
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: center;
+  margin-top: 2rem;
+  border: 2px solid var(--nyl-accent);
+}
+
+.celebration {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  animation: bounce 0.6s ease infinite alternate;
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-10px);
+  }
+}
+
+.completion-message h4 {
+  color: var(--nyl-blue);
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.completion-message p {
+  color: var(--text-secondary);
+  font-size: 1.05rem;
+  margin: 0;
+}
+
+.encouragement-message {
+  background: var(--bg-secondary);
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  margin-top: 1.5rem;
+  border-left: 4px solid var(--nyl-blue-light);
+}
+
+.encouragement-message p {
+  margin: 0;
+  color: var(--nyl-blue);
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .progress-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .stat-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .progress-tracker {
+    padding: 1.5rem;
+  }
+}
