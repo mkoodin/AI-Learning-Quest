@@ -1,0 +1,187 @@
+.learning-quest-pathway {
+  margin: 2rem 0;
+}
+
+.learning-quest-pathway h2 {
+  font-size: 2rem;
+  color: var(--nyl-navy);
+  margin-bottom: 0.5rem;
+}
+
+.pathway-intro {
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+.quests {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.quest-card {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+  position: relative;
+}
+
+.quest-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.quest-card.completed {
+  border-color: var(--success);
+  background: linear-gradient(to bottom, white 0%, rgba(16, 185, 129, 0.03) 100%);
+}
+
+.quest-card.locked {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.quest-card.locked:hover {
+  transform: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.quest-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.quest-icon {
+  font-size: 2.5rem;
+}
+
+.quest-status {
+  display: flex;
+  align-items: center;
+}
+
+.status-badge {
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.status-badge.completed {
+  background: var(--success);
+  color: white;
+}
+
+.status-badge.ready {
+  background: var(--nyl-gold);
+  color: var(--nyl-navy);
+}
+
+.status-badge.locked {
+  background: var(--border);
+  color: var(--text-secondary);
+}
+
+.quest-card h3 {
+  font-size: 1.3rem;
+  color: var(--nyl-navy);
+  margin-bottom: 0.75rem;
+}
+
+.quest-description {
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.quest-resource {
+  background: var(--bg-secondary);
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+}
+
+.resource-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.resource-info strong {
+  color: var(--nyl-navy);
+  font-size: 0.95rem;
+}
+
+.resource-type {
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+}
+
+.quest-button {
+  width: 100%;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.quest-button.learn {
+  background: var(--nyl-navy);
+  color: white;
+}
+
+.quest-button.try {
+  background: var(--nyl-light-blue);
+  color: white;
+}
+
+.quest-button.share {
+  background: var(--nyl-gold);
+  color: var(--nyl-navy);
+}
+
+.quest-button:disabled {
+  background: var(--border);
+  color: var(--text-secondary);
+  cursor: not-allowed;
+}
+
+.quest-hint {
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  font-style: italic;
+  text-align: center;
+}
+
+.pathway-footer {
+  background: linear-gradient(135deg, rgba(0, 48, 135, 0.05) 0%, rgba(255, 184, 28, 0.05) 100%);
+  padding: 1.5rem;
+  border-radius: 8px;
+  border-left: 4px solid var(--nyl-gold);
+}
+
+.pathway-footer p {
+  margin: 0;
+  color: var(--nyl-navy);
+}
+
+@media (max-width: 768px) {
+  .quests {
+    grid-template-columns: 1fr;
+  }
+
+  .quest-card {
+    padding: 1.5rem;
+  }
+}

@@ -1,0 +1,114 @@
+:root {
+  /* New York Life Brand Colors */
+  --nyl-navy: #003087;
+  --nyl-gold: #FFB81C;
+  --nyl-light-blue: #0066CC;
+  --nyl-dark-navy: #001F5C;
+
+  /* UI Colors */
+  --bg-primary: #FFFFFF;
+  --bg-secondary: #F5F7FA;
+  --text-primary: #1A1A1A;
+  --text-secondary: #666666;
+  --border: #E0E0E0;
+  --success: #10B981;
+  --hover: #F0F4F8;
+
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+  color: var(--text-primary);
+  background-color: var(--bg-secondary);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: var(--nyl-navy);
+  color: white;
+  cursor: pointer;
+  transition: all 0.25s;
+}
+
+button:hover {
+  background-color: var(--nyl-dark-navy);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0, 48, 135, 0.2);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+button.secondary {
+  background-color: var(--nyl-gold);
+  color: var(--nyl-dark-navy);
+}
+
+button.secondary:hover {
+  background-color: #E6A519;
+}
+
+input, select, textarea {
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  padding: 0.6em 0.8em;
+  font-size: 1em;
+  font-family: inherit;
+  background-color: white;
+  color: var(--text-primary);
+  transition: border-color 0.2s;
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  border-color: var(--nyl-navy);
+  box-shadow: 0 0 0 3px rgba(0, 48, 135, 0.1);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--nyl-navy);
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+a {
+  color: var(--nyl-light-blue);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: var(--nyl-navy);
+  text-decoration: underline;
+}
