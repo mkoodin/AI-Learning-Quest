@@ -12,7 +12,7 @@
 .filter-card h3 {
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
-  color: var(--nyl-navy);
+  color: var(--nyl-blue);
 }
 
 .filter-description {
@@ -37,7 +37,7 @@
   align-items: center;
   gap: 0.5rem;
   font-weight: 600;
-  color: var(--nyl-navy);
+  color: var(--nyl-blue);
   margin-bottom: 0.5rem;
   font-size: 1rem;
 }
@@ -58,19 +58,19 @@
 }
 
 .filter-select:hover {
-  border-color: var(--nyl-light-blue);
+  border-color: var(--nyl-blue-light);
 }
 
 .filter-select:focus {
-  border-color: var(--nyl-navy);
-  box-shadow: 0 0 0 3px rgba(0, 48, 135, 0.1);
+  border-color: var(--nyl-blue);
+  box-shadow: 0 0 0 3px rgba(0, 115, 189, 0.1);
 }
 
 .selection-summary {
   margin-top: 1.5rem;
   padding: 1rem;
-  background: linear-gradient(135deg, rgba(0, 48, 135, 0.05) 0%, rgba(255, 184, 28, 0.05) 100%);
-  border-left: 4px solid var(--nyl-gold);
+  background: linear-gradient(135deg, rgba(0, 115, 189, 0.05) 0%, rgba(0, 163, 224, 0.05) 100%);
+  border-left: 4px solid var(--nyl-accent);
   border-radius: 4px;
   animation: slideIn 0.3s ease;
 }
@@ -88,11 +88,11 @@
 
 .selection-summary p {
   margin: 0;
-  color: var(--nyl-navy);
+  color: var(--nyl-blue);
 }
 
 .selection-summary strong {
-  color: var(--nyl-navy);
+  color: var(--nyl-blue);
 }
 
 @media (max-width: 768px) {

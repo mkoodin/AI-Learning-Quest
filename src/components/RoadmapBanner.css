@@ -1,5 +1,5 @@
 .roadmap-banner {
-  background: linear-gradient(135deg, var(--nyl-navy) 0%, var(--nyl-dark-navy) 100%);
+  background: linear-gradient(135deg, var(--nyl-blue) 0%, var(--nyl-blue-dark) 100%);
   color: white;
   padding: 2rem 1.5rem;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
@@ -50,16 +50,16 @@
 }
 
 .phase.active {
-  background: rgba(255, 184, 28, 0.2);
-  border-color: var(--nyl-gold);
+  background: rgba(0, 163, 224, 0.2);
+  border-color: var(--nyl-accent);
 }
 
 .phase.current {
-  background: var(--nyl-gold);
-  border-color: var(--nyl-gold);
-  color: var(--nyl-navy);
+  background: var(--nyl-accent);
+  border-color: var(--nyl-accent);
+  color: white;
   font-weight: 600;
-  box-shadow: 0 4px 12px rgba(255, 184, 28, 0.4);
+  box-shadow: 0 4px 12px rgba(0, 163, 224, 0.4);
 }
 
 .phase-icon {
@@ -77,8 +77,8 @@
   bottom: -1.5rem;
   left: 50%;
   transform: translateX(-50%);
-  background: var(--nyl-gold);
-  color: var(--nyl-navy);
+  background: var(--nyl-accent);
+  color: white;
   padding: 0.25rem 0.75rem;
   border-radius: 12px;
   font-size: 0.75rem;
@@ -120,7 +120,7 @@
 
 .tooltip-content strong {
   display: block;
-  color: var(--nyl-navy);
+  color: var(--nyl-blue);
   font-size: 1.1rem;
   margin-bottom: 0.5rem;
 }
@@ -140,7 +140,7 @@
 }
 
 .phase-arrow.active {
-  color: var(--nyl-gold);
+  color: var(--nyl-accent);
 }
 
 @media (max-width: 768px) {

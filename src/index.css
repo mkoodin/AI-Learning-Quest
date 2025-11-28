@@ -1,9 +1,9 @@
 :root {
   /* New York Life Brand Colors */
-  --nyl-navy: #003087;
-  --nyl-gold: #FFB81C;
-  --nyl-light-blue: #0066CC;
-  --nyl-dark-navy: #001F5C;
+  --nyl-blue: #0073BD;
+  --nyl-blue-dark: #005A94;
+  --nyl-blue-light: #3399D6;
+  --nyl-accent: #00A3E0;
 
   /* UI Colors */
   --bg-primary: #FFFFFF;
@@ -48,16 +48,16 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: var(--nyl-navy);
+  background-color: var(--nyl-blue);
   color: white;
   cursor: pointer;
   transition: all 0.25s;
 }
 
 button:hover {
-  background-color: var(--nyl-dark-navy);
+  background-color: var(--nyl-blue-dark);
   transform: translateY(-1px);
-  box-shadow: 0 4px 8px rgba(0, 48, 135, 0.2);
+  box-shadow: 0 4px 8px rgba(0, 115, 189, 0.2);
 }
 
 button:active {
@@ -71,12 +71,12 @@ button:disabled {
 }
 
 button.secondary {
-  background-color: var(--nyl-gold);
-  color: var(--nyl-dark-navy);
+  background-color: var(--nyl-accent);
+  color: white;
 }
 
 button.secondary:hover {
-  background-color: #E6A519;
+  background-color: #008FCC;
 }
 
 input, select, textarea {
@@ -92,23 +92,23 @@ input, select, textarea {
 
 input:focus, select:focus, textarea:focus {
   outline: none;
-  border-color: var(--nyl-navy);
-  box-shadow: 0 0 0 3px rgba(0, 48, 135, 0.1);
+  border-color: var(--nyl-blue);
+  box-shadow: 0 0 0 3px rgba(0, 115, 189, 0.1);
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: var(--nyl-navy);
+  color: var(--nyl-blue);
   font-weight: 600;
   line-height: 1.3;
 }
 
 a {
-  color: var(--nyl-light-blue);
+  color: var(--nyl-blue-light);
   text-decoration: none;
   transition: color 0.2s;
 }
 
 a:hover {
-  color: var(--nyl-navy);
+  color: var(--nyl-blue);
   text-decoration: underline;
 }

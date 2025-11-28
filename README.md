@@ -92,9 +92,9 @@ When you first use the Prompt Playground, you'll be prompted to enter your OpenA
 ## 🎨 Design
 
 The application uses **New York Life's brand colors**:
-- Navy Blue: `#003087` (Primary)
-- Gold: `#FFB81C` (Accent)
-- Light Blue: `#0066CC` (Interactive elements)
+- New York Life Blue: `#0073BD` / RGB(0, 115, 189) - Primary brand color
+- Supporting blue shades for depth and hierarchy
+- Clean, professional design emphasizing accessibility and usability
 
 ## 📁 Project Structure
 
